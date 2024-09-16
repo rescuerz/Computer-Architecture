@@ -1,0 +1,130 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Sep 16 15:17:59 2024
+| Host         : dellzn running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    52 |
+|    Minimum number of control sets                        |    52 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    46 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    52 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    42 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              48 |           18 |
+| No           | No                    | Yes                    |             176 |           46 |
+| No           | Yes                   | No                     |              14 |            4 |
+| Yes          | No                    | No                     |            1254 |          793 |
+| Yes          | No                    | Yes                    |            1095 |          712 |
+| Yes          | Yes                   | No                     |             111 |           49 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+----------------------------------------+--------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |              Enable Signal             |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+----------------------------------------+--------------------------------+------------------+----------------+--------------+
+|  CLK_GEN/clk_disp    | BTN_SCAN/p_0_in                        |                                |                1 |              2 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG |                                        |                                |                1 |              2 |         2.00 |
+|  debug_clk           |                                        |                                |                2 |              4 |         2.00 |
+|  CLK_GEN/clk_cpu     | DEBUG_CTRL/beat_counter                | rst_all                        |                2 |              5 |         2.50 |
+|  CLK_GEN/clk_cpu     | DEBUG_CTRL/reg_counter                 | rst_all                        |                2 |              5 |         2.50 |
+|  CLK_GEN/clk_cpu     | DEBUG_CTRL/cust_counter                | rst_all                        |                2 |              5 |         2.50 |
+|  CLK_GEN/clk_cpu     | UART_BUFF/update_head                  | rst_all                        |                3 |              8 |         2.67 |
+|  CLK_GEN/clk_cpu     | UART_BUFF/E[0]                         | rst_all                        |                4 |              8 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | UART_BUFF/send_reg_0[0]                |                                |                1 |              8 |         8.00 |
+|  CLK100MHZ_IBUF_BUFG |                                        | uart_tx_ctrl/bitTmr            |                4 |             14 |         3.50 |
+|  debug_clk           | core/reg_IF_ID/rst_all_reg             | core/reg_IF_ID/rst_all_reg_0   |                8 |             16 |         2.00 |
+|  CLK_GEN/clk_disp    |                                        |                                |                5 |             18 |         3.60 |
+|  CLK_GEN/clk_cpu     |                                        |                                |               10 |             24 |         2.40 |
+|  debug_clk           | core/reg_IF_ID/PCurrent_ID[31]_i_1_n_0 | rst_all                        |               11 |             30 |         2.73 |
+|  CLK100MHZ_IBUF_BUFG | uart_tx_ctrl/bitIndex                  | uart_tx_ctrl/uart_ready        |                9 |             32 |         3.56 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[26]1     | rst_all                        |               21 |             32 |         1.52 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[27]1     | rst_all                        |               19 |             32 |         1.68 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[31]1     | rst_all                        |               29 |             32 |         1.10 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[5]1      | rst_all                        |               20 |             32 |         1.60 |
+|  debug_clk           | core/reg_EXE_MEM/rst_all_reg           | core/reg_EXE_MEM/rst_all_reg_0 |               19 |             32 |         1.68 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[11]1     | rst_all                        |               19 |             32 |         1.68 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[17]1     | rst_all                        |               17 |             32 |         1.88 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[21]1     | rst_all                        |               22 |             32 |         1.45 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[7]1      | rst_all                        |               22 |             32 |         1.45 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[29]1     | rst_all                        |               26 |             32 |         1.23 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[13]1     | rst_all                        |               18 |             32 |         1.78 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[15]1     | rst_all                        |               28 |             32 |         1.14 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[24]1     | rst_all                        |               17 |             32 |         1.88 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[2]1      | rst_all                        |               20 |             32 |         1.60 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[6]1      | rst_all                        |               25 |             32 |         1.28 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[8]1      | rst_all                        |               32 |             32 |         1.00 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[18]1     | rst_all                        |               21 |             32 |         1.52 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[4]1      | rst_all                        |               22 |             32 |         1.45 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[12]1     | rst_all                        |               19 |             32 |         1.68 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[28]1     | rst_all                        |               18 |             32 |         1.78 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[30]1     | rst_all                        |               31 |             32 |         1.03 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[25]1     | rst_all                        |               13 |             32 |         2.46 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[3]1      | rst_all                        |               16 |             32 |         2.00 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[9]1      | rst_all                        |               24 |             32 |         1.33 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[14]1     | rst_all                        |               22 |             32 |         1.45 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[16]1     | rst_all                        |               19 |             32 |         1.68 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[22]1     | rst_all                        |               30 |             32 |         1.07 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[1]1      | rst_all                        |               19 |             32 |         1.68 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[20]1     | rst_all                        |               23 |             32 |         1.39 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[10]1     | rst_all                        |               18 |             32 |         1.78 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[23]1     | rst_all                        |               29 |             32 |         1.10 |
+| ~debug_clk           | core/reg_MEM_WB/register_next[19]1     | rst_all                        |               17 |             32 |         1.88 |
+|  debug_clk           | core/reg_IF_ID/IR_ID[30]_i_4_0         | rst_all                        |               25 |             73 |         2.92 |
+|  debug_clk           | core/reg_IF_ID/rst_all_reg             |                                |               31 |             84 |         2.71 |
+|  debug_clk           | core/reg_EXE_MEM/rst_all_reg           |                                |               49 |            136 |         2.78 |
+|  debug_clk           |                                        | rst_all                        |               46 |            176 |         3.83 |
+| ~debug_clk           | core/reg_EXE_MEM/E[0]                  |                                |              711 |           1024 |         1.44 |
++----------------------+----------------------------------------+--------------------------------+------------------+----------------+--------------+
+
+
