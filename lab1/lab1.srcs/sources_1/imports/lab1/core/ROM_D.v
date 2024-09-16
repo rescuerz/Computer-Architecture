@@ -9,7 +9,7 @@ module ROM_D(
 
     initial	begin
         // $readmemh("rom.mem", inst_data);
-        $readmemh("C:/Users/26822/Desktop/ZJU_Course_Resource/CA/Lab/lab1/lab1.srcs/sources_1/imports/core/rom.mem", inst_data);
+        $readmemh("D:/ViVado/CA_Lab/lab1/lab1.srcs/sources_1/imports/core/rom.mem", inst_data);
         
     end
 

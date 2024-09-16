@@ -14,7 +14,8 @@ module RAM_B(
 
     initial	begin
         // $readmemh("ram.mem", data);
-        $readmemh("C:/Users/26822/Desktop/ZJU_Course_Resource/CA/Lab/lab1/lab1.srcs/sources_1/imports/core/ram.mem", data);
+        
+        $readmemh("D:/ViVado/CA_Lab/lab1/lab1.srcs/sources_1/imports/core/ram.mem", data);
         
     end
 

@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="65" Path="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/Lab/lab1/lab1.xpr">
+<Project Product="Vivado" Version="7" Minor="65" Path="D:/ViVado/CA_Lab/lab1/lab1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="37644956aa384084875e368ab89da1b9"/>
@@ -60,7 +60,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys-a7-100t"/>
     <Option Name="FeatureSet" Val="FeatureSet_Classic"/>
-    <Option Name="WTXSimLaunchSim" Val="15"/>
+    <Option Name="WTXSimLaunchSim" Val="16"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -93,7 +93,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/ALU.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/ALU.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/ALU.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -102,7 +102,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/CtrlUnit.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/CtrlUnit.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/CtrlUnit.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -111,7 +111,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/HazardDetectionUnit.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/HazardDetectionUnit.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/HazardDetectionUnit.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -120,7 +120,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/ImmGen.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/ImmGen.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/ImmGen.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -129,7 +129,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/common/MUX2T1_32.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/common/MUX2T1_32.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/common/MUX2T1_32.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -138,7 +138,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/common/MUX4T1_32.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/common/MUX4T1_32.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/common/MUX4T1_32.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -147,7 +147,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/RAM_B.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/RAM_B.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/RAM_B.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -156,7 +156,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/common/REG32.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/common/REG32.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/common/REG32.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -165,7 +165,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/REG_EX_MEM.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/REG_EX_MEM.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/REG_EX_MEM.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -174,7 +174,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/REG_ID_EX.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/REG_ID_EX.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/REG_ID_EX.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -183,7 +183,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/REG_IF_ID.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/REG_IF_ID.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/REG_IF_ID.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -192,7 +192,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/REG_MEM_WB.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/REG_MEM_WB.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/REG_MEM_WB.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -201,7 +201,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/ROM_D.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/ROM_D.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/ROM_D.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -210,7 +210,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/RV32core.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/RV32core.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/RV32core.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -219,7 +219,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/core/Regs.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/Regs.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/Regs.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -228,7 +228,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/common/add_32.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/common/add_32.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/common/add_32.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -237,7 +237,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/auxillary/function.vh">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/auxillary/function.vh"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/auxillary/function.vh"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -246,7 +246,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/auxillary/btn_scan.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/auxillary/btn_scan.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/auxillary/btn_scan.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -255,7 +255,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/common/cmp_32.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/common/cmp_32.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/common/cmp_32.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -264,7 +264,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/auxillary/debug_clk.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/auxillary/debug_clk.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/auxillary/debug_clk.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -273,7 +273,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/auxillary/debug_ctrl.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/auxillary/debug_ctrl.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/auxillary/debug_ctrl.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -282,7 +282,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/auxillary/my_clk_gen.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/auxillary/my_clk_gen.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/auxillary/my_clk_gen.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -291,7 +291,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/auxillary/uart_buffer.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/auxillary/uart_buffer.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/auxillary/uart_buffer.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -300,7 +300,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/auxillary/UART_TX_CTRL.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/auxillary/UART_TX_CTRL.vhd"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/auxillary/UART_TX_CTRL.vhd"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -308,7 +308,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/auxillary/top.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/auxillary/top.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/auxillary/top.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -317,7 +317,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/core/ram.mem">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/ram.mem"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/ram.mem"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -325,7 +325,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/core/rom.mem">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/core/rom.mem"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/core/rom.mem"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -341,7 +341,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/lab1/constraint.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/constraint.xdc"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/constraint.xdc"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -355,7 +355,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/imports/sim/core_sim.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/sim/core_sim.v"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/sim/core_sim.v"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -364,7 +364,7 @@
       </File>
       <File Path="$PSRCDIR/sim_1/imports/sim/core_sim_behav.wcfg">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../arch-fa24-master/src/lab1/sim/core_sim_behav.wcfg"/>
+          <Attr Name="ImportPath" Val="C:/Users/26822/Desktop/ZJU_Course_Resource/CA/arch-fa24-master/src/lab1/sim/core_sim_behav.wcfg"/>
           <Attr Name="ImportTime" Val="1726163508"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
