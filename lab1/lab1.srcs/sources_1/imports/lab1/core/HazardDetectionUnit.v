@@ -69,7 +69,7 @@ module HazardDetectionUnit(
     // load-use hazard, 需要一个stall，先排除load_store情况
     wire rs2_stall = (rs2use_ID == 1)
                     & (rd_EXE != 0)
-                    & (rs2_ID == rd_EXE)
+                    & (rs2_ID == rd_EXE)8
                     & (hazard_optype_EX == 2'b10)
                     & (hazard_optype_ID != 2'b11);
     
