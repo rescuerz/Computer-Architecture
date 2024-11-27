@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1731677275">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/ALU.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/CPUTEST.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/CPUTEST.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/CtrlUnit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/CtrlUnit.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/HazardDetectionUnit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/HazardDetectionUnit.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/ImmGen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/ImmGen.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/common/MUX2T1_32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/common/MUX2T1_32.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/common/MUX4T1_32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/common/MUX4T1_32.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/common/REG32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/common/REG32.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/REG_EX_MEM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/REG_EX_MEM.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/REG_ID_EX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/REG_ID_EX.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/REG_IF_ID.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/REG_IF_ID.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/REG_MEM_WB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/REG_MEM_WB.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/ROM_D.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/ROM_D.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/RV32core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/RV32core.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/Regs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/Regs.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/common/add_32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/common/add_32.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/function.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/function.vh"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/btn_scan.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/btn_scan.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/cache/addr_define.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/cache/addr_define.vh"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/cache/cache.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/cache/cache.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/common/cmp_32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/common/cmp_32.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/cache/cmu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/cache/cmu.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/cache/data_ram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/cache/data_ram.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/debug_clk.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/debug_clk.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/debug_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/debug_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/display.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/my_clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/my_clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/parallel2serial.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/parallel2serial.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/uart_buffer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/uart_buffer.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/UART_TX_CTRL.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/UART_TX_CTRL.vhd"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/auxillary/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/auxillary/top.v"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/cache/ram.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/cache/ram.mem"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab4/core/rom.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/core/rom.mem"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/lab4/constraint.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arch-fa24-master/src/lab4/constraint.xdc"/>
+        <Attr Name="ImportTime" Val="1730804278"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

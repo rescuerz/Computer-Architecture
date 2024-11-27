@@ -1,7 +1,6 @@
 // | ----------- address 32 ----------- |
 // | 31   9 | 8     4 | 3    2 | 1    0 |
 // | tag 23 | index 5 | word 2 | byte 2 |
-
 module cache (
 	input wire clk,  // clock
 	input wire rst,  // reset

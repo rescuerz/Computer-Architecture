@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Nov 28 00:51:44 2024
+# Process ID: 32052
+# Current directory: D:/ViVado/CA_Lab/lab5/lab5.runs/multiplier_synth_1
+# Command line: vivado.exe -log multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiplier.tcl
+# Log file: D:/ViVado/CA_Lab/lab5/lab5.runs/multiplier_synth_1/multiplier.vds
+# Journal file: D:/ViVado/CA_Lab/lab5/lab5.runs/multiplier_synth_1\vivado.jou
+# Running On: dellzn, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16849 MB
+#-----------------------------------------------------------
+source multiplier.tcl -notrace
