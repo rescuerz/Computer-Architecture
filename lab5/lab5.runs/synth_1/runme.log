@@ -1,0 +1,589 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/ViVado/CA_Lab/lab5/lab5.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/ViVado/CA_Lab/lab5/lab5.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33192
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1331.066 ; gain = 439.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'seg_en', assumed default net type 'wire' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/display.v:99]
+INFO: [Synth 8-11241] undeclared symbol 'seg_clr_n', assumed default net type 'wire' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/display.v:100]
+INFO: [Synth 8-11241] undeclared symbol 'clkout0', assumed default net type 'wire' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/my_clk_gen.v:138]
+INFO: [Synth 8-11241] undeclared symbol 'clkout1', assumed default net type 'wire' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/my_clk_gen.v:140]
+INFO: [Synth 8-11241] undeclared symbol 'clkout2', assumed default net type 'wire' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/my_clk_gen.v:142]
+INFO: [Synth 8-11241] undeclared symbol 'clkout3', assumed default net type 'wire' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/my_clk_gen.v:144]
+WARNING: [Synth 8-6901] identifier 'DATA_BITS' is used before its declaration [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/parallel2serial.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/top.v:8]
+INFO: [Synth 8-6157] synthesizing module 'my_clk_gen' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/my_clk_gen.v:72]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [D:/ViVado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 100 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [D:/ViVado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/ViVado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [D:/ViVado/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'my_clk_gen' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/my_clk_gen.v:72]
+INFO: [Synth 8-6157] synthesizing module 'btn_scan' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/btn_scan.v:8]
+	Parameter CLK_FREQ bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'btn_scan' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/btn_scan.v:8]
+INFO: [Synth 8-6157] synthesizing module 'RV32core' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/RV32core.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debug_clk' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_clk.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debug_clk' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_clk.v:3]
+INFO: [Synth 8-6157] synthesizing module 'REG32' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/common/REG32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'REG32' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/common/REG32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'add_32' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/common/add_32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'add_32' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/common/add_32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_32' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/common/MUX2T1_32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_32' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/common/MUX2T1_32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM_D' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/ROM_D.v:3]
+INFO: [Synth 8-3876] $readmem data file 'D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/rom.mem' is read successfully [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/ROM_D.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_D' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/ROM_D.v:3]
+INFO: [Synth 8-6157] synthesizing module 'REG_IF_IS' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/REG_IF_IS.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'REG_IF_IS' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/REG_IF_IS.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/ImmGen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/ImmGen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CtrlUnit' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/CtrlUnit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'CtrlUnit' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/CtrlUnit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Regs' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/Regs.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Regs' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/Regs.v:22]
+INFO: [Synth 8-6157] synthesizing module 'FU_ALU' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FU_ALU' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FU_mem' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_mem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RAM_B' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/RAM_B.v:3]
+INFO: [Synth 8-3876] $readmem data file 'D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/ram.mem' is read successfully [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/RAM_B.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_B' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/RAM_B.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FU_mem' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_mem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FU_mul' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_mul.v:3]
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [D:/ViVado/CA_Lab/lab5/lab5.runs/synth_1/.Xil/Vivado-31004-dellzn/realtime/multiplier_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.runs/synth_1/.Xil/Vivado-31004-dellzn/realtime/multiplier_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FU_mul' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_mul.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FU_div' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_div.v:3]
+INFO: [Synth 8-6157] synthesizing module 'divider' [D:/ViVado/CA_Lab/lab5/lab5.runs/synth_1/.Xil/Vivado-31004-dellzn/realtime/divider_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.runs/synth_1/.Xil/Vivado-31004-dellzn/realtime/divider_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FU_div' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_div.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FU_jump' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_jump.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cmp_32' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/common/cmp_32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cmp_32' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/common/cmp_32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FU_jump' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_jump.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX8T1_32' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/common/MUX8T1_32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUX8T1_32' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/common/MUX8T1_32.v:3]
+INFO: [Synth 8-226] default block is never used [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/RV32core.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'RV32core' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/RV32core.v:3]
+INFO: [Synth 8-6157] synthesizing module 'display' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/display.v:7]
+INFO: [Synth 8-6157] synthesizing module 'parallel2serial' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/parallel2serial.v:7]
+	Parameter P_CLK_FREQ bound to: 25 - type: integer 
+	Parameter S_CLK_FREQ bound to: 20 - type: integer 
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter CODE_ENDIAN bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/parallel2serial.v:48]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/parallel2serial.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'parallel2serial' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/parallel2serial.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'display' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/display.v:7]
+INFO: [Synth 8-638] synthesizing module 'UART_TX_CTRL' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/UART_TX_CTRL.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'UART_TX_CTRL' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/UART_TX_CTRL.vhd:50]
+INFO: [Synth 8-6157] synthesizing module 'uart_buffer' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/uart_buffer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart_buffer' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/uart_buffer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debug_ctrl' [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'debug_ctrl' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/top.v:8]
+WARNING: [Synth 8-6014] Unused sequential element IMM_reg[3] was removed.  [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/CtrlUnit.v:348]
+WARNING: [Synth 8-6014] Unused sequential element IMM_reg[4] was removed.  [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/CtrlUnit.v:348]
+WARNING: [Synth 8-6014] Unused sequential element PCR_reg[2] was removed.  [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/CtrlUnit.v:368]
+WARNING: [Synth 8-6014] Unused sequential element PCR_reg[3] was removed.  [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/CtrlUnit.v:368]
+WARNING: [Synth 8-6014] Unused sequential element PCR_reg[4] was removed.  [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/CtrlUnit.v:368]
+WARNING: [Synth 8-7137] Register PCR_reg[1] in module CtrlUnit has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/CtrlUnit.v:368]
+WARNING: [Synth 8-7137] Register PCR_reg[5] in module CtrlUnit has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/CtrlUnit.v:368]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'data_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "data_reg" dissolved into registers
+WARNING: [Synth 8-6014] Unused sequential element B_valid_reg was removed.  [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/FU_div.v:27]
+WARNING: [Synth 8-3848] Net cust_sig_list[4] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[5] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[6] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[7] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[8] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[9] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[10] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[11] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[12] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[13] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[14] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[15] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[16] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[17] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[18] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[19] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[20] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[21] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[22] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[23] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[24] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[25] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[26] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[27] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[28] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[29] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[30] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_sig_list[31] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:47]
+WARNING: [Synth 8-3848] Net cust_name_list[4] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[5] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[6] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[7] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[8] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[9] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[10] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[11] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[12] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[13] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[14] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[15] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[16] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[17] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[18] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[19] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[20] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[21] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[22] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[23] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[24] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[25] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[26] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[27] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[28] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[29] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[30] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net cust_name_list[31] in module/entity debug_ctrl does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/debug_ctrl.v:55]
+WARNING: [Synth 8-3848] Net VGA_B in module/entity top does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/top.v:26]
+WARNING: [Synth 8-3848] Net VGA_G in module/entity top does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/top.v:27]
+WARNING: [Synth 8-3848] Net VGA_R in module/entity top does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/top.v:28]
+WARNING: [Synth 8-3848] Net HS in module/entity top does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/top.v:29]
+WARNING: [Synth 8-3848] Net VS in module/entity top does not have driver. [D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/auxillary/top.v:29]
+WARNING: [Synth 8-7129] Port inst_field[6] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[5] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[4] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[3] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[2] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[1] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst_field[0] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port debug_addr[6] in module RV32core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupter in module RV32core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_B[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_B[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_B[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_B[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_G[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_G[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_G[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_G[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_R[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_R[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_R[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_R[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HS in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VS in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1503.715 ; gain = 612.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1503.715 ; gain = 612.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1503.715 ; gain = 612.578
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1503.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/ViVado/CA_Lab/lab5/lab5.gen/sources_1/ip/multiplier/multiplier/multiplier_in_context.xdc] for cell 'core/mu/mul'
+Finished Parsing XDC File [d:/ViVado/CA_Lab/lab5/lab5.gen/sources_1/ip/multiplier/multiplier/multiplier_in_context.xdc] for cell 'core/mu/mul'
+Parsing XDC File [d:/ViVado/CA_Lab/lab5/lab5.gen/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'core/du/div'
+Finished Parsing XDC File [d:/ViVado/CA_Lab/lab5/lab5.gen/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'core/du/div'
+Parsing XDC File [D:/ViVado/CA_Lab/lab5/lab5.srcs/constrs_1/imports/lab5/constraint.xdc]
+Finished Parsing XDC File [D:/ViVado/CA_Lab/lab5/lab5.srcs/constrs_1/imports/lab5/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/ViVado/CA_Lab/lab5/lab5.srcs/constrs_1/imports/lab5/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1600.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1600.715 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'core/du/div' at clock pin 'aclk' is different from the actual clock period '100.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1600.715 ; gain = 709.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1600.715 ; gain = 709.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for core/mu/mul. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for core/du/div. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1600.715 ; gain = 709.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'parallel2serial'
+INFO: [Synth 8-802] inferred FSM for state register 'txState_reg' in module 'UART_TX_CTRL'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debug_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                              000
+                 S_CLEAR |                             0010 |                              001
+                  S_WORK |                             0100 |                              010
+                  S_DONE |                             1000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'parallel2serial'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     rdy |                               00 |                               00
+                load_bit |                               01 |                               01
+                send_bit |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txState_reg' using encoding 'sequential' in module 'UART_TX_CTRL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                    sREG |                               01 |                               01
+                   sCUST |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'debug_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1600.715 ; gain = 709.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 7     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 9     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 63    
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 130   
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 33    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---RAMs : 
+	               2K Bit	(256 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input 1024 Bit        Muxes := 2     
+	   3 Input  160 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 14    
+	  29 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   4 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 4     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 216   
+	   3 Input    8 Bit        Muxes := 52    
+	   5 Input    8 Bit        Muxes := 2     
+	   6 Input    8 Bit        Muxes := 2     
+	  16 Input    7 Bit        Muxes := 8     
+	   2 Input    7 Bit        Muxes := 17    
+	   2 Input    5 Bit        Muxes := 10    
+	   3 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 9     
+	   4 Input    4 Bit        Muxes := 2     
+	  16 Input    4 Bit        Muxes := 8     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 328   
+	   5 Input    3 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 6     
+	   6 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 493   
+	   5 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port VGA_B[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_B[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_B[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_B[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_G[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_G[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_G[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_G[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_R[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_R[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_R[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VGA_R[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HS in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VS in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:44 . Memory (MB): peak = 1683.672 ; gain = 792.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top         | UART_BUFF/buffer_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:48 . Memory (MB): peak = 1683.672 ; gain = 792.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:01:01 . Memory (MB): peak = 1683.672 ; gain = 792.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top         | UART_BUFF/buffer_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance UART_BUFF/buffer_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:01:05 . Memory (MB): peak = 1683.672 ; gain = 792.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:01:09 . Memory (MB): peak = 1694.164 ; gain = 803.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:01:09 . Memory (MB): peak = 1694.164 ; gain = 803.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:01:10 . Memory (MB): peak = 1694.164 ; gain = 803.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:01:10 . Memory (MB): peak = 1694.164 ; gain = 803.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:01:10 . Memory (MB): peak = 1694.195 ; gain = 803.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:01:10 . Memory (MB): peak = 1694.195 ; gain = 803.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |divider       |         1|
+|2     |multiplier    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |divider    |     1|
+|2     |multiplier |     1|
+|3     |BUFG       |     8|
+|4     |CARRY4     |   106|
+|5     |LUT1       |    37|
+|6     |LUT2       |   332|
+|7     |LUT3       |   505|
+|8     |LUT4       |   452|
+|9     |LUT5       |   746|
+|10    |LUT6       |  5390|
+|11    |MMCME2_ADV |     1|
+|12    |MUXF7      |   895|
+|13    |MUXF8      |   222|
+|14    |RAMB18E1   |     1|
+|15    |FDCE       |  1554|
+|16    |FDRE       |  1775|
+|17    |FDSE       |    13|
+|18    |IBUF       |    18|
+|19    |OBUF       |    33|
+|20    |OBUFT      |    14|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:01:10 . Memory (MB): peak = 1694.195 ; gain = 803.059
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:01:08 . Memory (MB): peak = 1694.195 ; gain = 706.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:01:10 . Memory (MB): peak = 1694.195 ; gain = 803.059
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1694.195 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1225 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1707.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: 69defd68
+INFO: [Common 17-83] Releasing license: Synthesis
+102 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:01:15 . Memory (MB): peak = 1707.852 ; gain = 1226.820
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1707.852 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/ViVado/CA_Lab/lab5/lab5.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 14:15:28 2024...

@@ -8,7 +8,8 @@ module ROM_D(
     reg[31:0] inst_data[0:127];
 
     initial	begin
-        $readmemh("rom.mem", inst_data);
+        // D:\ViVado\CA_Lab\lab5\lab5.srcs\sources_1\imports\lab5\core\rom.mem
+        $readmemh("D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/rom.mem", inst_data);
     end
 
     assign spo = inst_data[a];

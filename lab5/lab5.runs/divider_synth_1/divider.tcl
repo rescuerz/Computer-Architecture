@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "divider_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 5
+set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -88,7 +90,7 @@ set_property ip_output_repo d:/ViVado/CA_Lab/lab5/lab5.cache/ip [current_project
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/ip/divider/divider.xci
+read_ip -quiet D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/ip/divider/divider.xci
 set_property used_in_implementation false [get_files -all d:/ViVado/CA_Lab/lab5/lab5.gen/sources_1/ip/divider/divider_ooc.xdc]
 
 OPTRACE "Adding files" END { }

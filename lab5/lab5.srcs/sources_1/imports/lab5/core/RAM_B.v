@@ -12,7 +12,8 @@ module RAM_B(
     reg[7:0] data[0:127];
 
     initial	begin
-        $readmemh("ram.mem", data);
+        //D:\ViVado\CA_Lab\lab5\lab5.srcs\sources_1\imports\lab5\core\ram.mem
+        $readmemh("D:/ViVado/CA_Lab/lab5/lab5.srcs/sources_1/imports/lab5/core/ram.mem", data);
     end
 
     always @ (negedge clka) begin
